@@ -1,4 +1,4 @@
-#Sistem Perhitungan Lembur
+##Sistem Perhitungan Lembur
 
 Sistem ini merupakan rest api yang dapat menghitung upah lembur pada karyawan. Sistem ini dibuat dengan tujuan untuk menyelesaikan interview skill yang dilaksanakan oleh PT Kledo.
 
@@ -15,7 +15,7 @@ Contoh hasil perhitungan lembur pegawai dalam masa percobaan seperti berikut.
 3. Lembur 1,5 jam, maka tidak mendapatkan upah lembur
 4. Lembur 3,9 jam, maka mendapatkan upah lembur 2 jam
 
-#Fitur
+##Fitur
 
 1. Dapat Menambah Data Karyawan (Employee) => 'http://127.0.0.1:8000/api/employees' method 'POST'
    -Dengan Mengirimkan Data name, status_id, salary
@@ -24,16 +24,16 @@ Contoh hasil perhitungan lembur pegawai dalam masa percobaan seperti berikut.
 3. Dapat Mengubah Data Setting Metode Perhitungan => 'http://127.0.0.1:8000/api/employees' method 'PATCH'
    -Dengan Mengirimkan Data key, value
 4. Dapat Menambah Data Overtime (Jam Lembur) => 'http://127.0.0.1:8000/api/overtimes' method 'POST'
-   -Dengan Mengirimkan Data employee_id, date(Y:m:d), time_started (HH:MM), time_ended(HH:MM)
+   -Dengan Mengirimkan Data employee_id, date(YY:mm:dd), time_started (HH:MM), time_ended(HH:MM)
 5. Dapat Menampilkan Data Overtime => 'http://127.0.0.1:8000/api/overtimes' method 'GET'
-   -Dengan Menambahkan beberapa parameter seperti date_started(Y:m:d), date_ended(Y:m:d)
+   -Dengan Menambahkan beberapa parameter seperti date_started(YY:mm:dd), date_ended(YY:mm:dd)
 6. Dapat Menghitung Gaji Lembur Bulanan => 'http://127.0.0.1:8000/api/overtime-pays/calculate'
    -Dengan Mengirimkan paramater 'month'.
 
-#Dokumnetasi API
+##Dokumnetasi API
 
 Untuk Dokumentasi API dapat diakases menggunakan => 'http://127.0.0.1:8000/api/documentation'
 
-#Testing
+##Testing
 
 Dapat dijalankan dengan menggunakan syntax 'vendor/bin/phpunit'
