@@ -1,4 +1,4 @@
-##Sistem Perhitungan Lembur
+# Sistem Perhitungan Lembur
 
 Sistem ini merupakan rest api yang dapat menghitung upah lembur pada karyawan. Sistem ini dibuat dengan tujuan untuk menyelesaikan interview skill yang dilaksanakan oleh PT Kledo.
 
@@ -15,7 +15,7 @@ Contoh hasil perhitungan lembur pegawai dalam masa percobaan seperti berikut.
 3. Lembur 1,5 jam, maka tidak mendapatkan upah lembur
 4. Lembur 3,9 jam, maka mendapatkan upah lembur 2 jam
 
-##Fitur
+## Fitur
 
 1. Dapat Menambah Data Karyawan (Employee) => 'http://127.0.0.1:8000/api/employees' method 'POST'
    -Dengan Mengirimkan Data name, status_id, salary
@@ -34,6 +34,6 @@ Contoh hasil perhitungan lembur pegawai dalam masa percobaan seperti berikut.
 
 Untuk Dokumentasi API dapat diakases menggunakan => 'http://127.0.0.1:8000/api/documentation'
 
-##Testing
+## Testing
 
 Dapat dijalankan dengan menggunakan syntax 'vendor/bin/phpunit'
